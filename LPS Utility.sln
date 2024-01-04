@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPS Utility", "LPS Utility.csproj", "{B065D80B-1807-4923-A311-6E181F6E9736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B065D80B-1807-4923-A311-6E181F6E9736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B065D80B-1807-4923-A311-6E181F6E9736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B065D80B-1807-4923-A311-6E181F6E9736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B065D80B-1807-4923-A311-6E181F6E9736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1803B9A6-14DF-4416-A199-937F846C48AC}
+	EndGlobalSection
+EndGlobal
