@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 
 
-namespace LPS_GOLD
+namespace LPS_Utility
 {
     public partial class PricingGuide : Form
     {

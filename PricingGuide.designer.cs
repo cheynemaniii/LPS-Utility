@@ -1,5 +1,5 @@
 ﻿
-namespace LPS_GOLD
+namespace LPS_Utility
 {
     partial class PricingGuide
     {
