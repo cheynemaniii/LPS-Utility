@@ -29,6 +29,7 @@ namespace LPS_Utility
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.lblGoldSpot = new System.Windows.Forms.Label();
             this.gBoxVaribles = new System.Windows.Forms.GroupBox();
             this.txtDiamonds = new System.Windows.Forms.TextBox();
@@ -322,6 +323,7 @@ namespace LPS_Utility
             this.mnuSettings.Name = "mnuSettings";
             this.mnuSettings.Size = new System.Drawing.Size(145, 26);
             this.mnuSettings.Text = "&Settings";
+            this.mnuSettings.Click += new System.EventHandler(this.mnuSettings_Click);
             // 
             // toolStripSeparator1
             // 
@@ -438,6 +440,7 @@ namespace LPS_Utility
             this.Controls.Add(this.gBoxVaribles);
             this.Controls.Add(this.lblGoldSpot);
             this.Controls.Add(this.mnuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mnuStrip;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmMain";

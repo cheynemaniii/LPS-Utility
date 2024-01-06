@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using LPS_GOLD;
 using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace LPS_Utility
@@ -13,6 +14,8 @@ namespace LPS_Utility
         public decimal GlobalSpot;
         public decimal SilverSpot;
         
+    
+
         KitcoGoldSpot kitcoGoldSpot = new KitcoGoldSpot();
         KitcoSilverSpot kitcoSilverSpot = new KitcoSilverSpot();
 
@@ -21,7 +24,7 @@ namespace LPS_Utility
         public FrmMain()
         {
             InitializeComponent();
-
+            
             GlobalSpot = kitcoGoldSpot.SpotValue();
             SilverSpot = kitcoSilverSpot.SpotValue();
             txtGoldSpot.Text=GlobalSpot.ToString(); 
@@ -244,6 +247,7 @@ namespace LPS_Utility
             get
             {
                 decimal goldSpot;
+                bool isDifferent;
 
                 //check to see if txtGoldSpot is empty
 
@@ -254,7 +258,9 @@ namespace LPS_Utility
                 }
                 else
                 {
-                    if (GlobalSpot > 0)
+                    isDifferent = GlobalSpot == (Convert.ToDecimal(txtGoldSpot.Text));
+
+                    if (isDifferent)
                     {
                         return goldSpot = GlobalSpot / 31.1m;
                     }
@@ -352,8 +358,8 @@ namespace LPS_Utility
             GlobalSpot = kitcoGoldSpot.SpotValue();
             SilverSpot = kitcoSilverSpot.SpotValue();
 
-            txtGoldSpot.Text=GlobalSpot.ToString();
-            txtSilverSpot.Text=SilverSpot.ToString();
+            txtGoldSpot.Text = GlobalSpot.ToString();
+            txtSilverSpot.Text = SilverSpot.ToString();
         }
 
 
@@ -375,7 +381,7 @@ namespace LPS_Utility
         private void txtSilverSpot_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-    (e.KeyChar != '.'))
+                (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }
@@ -389,6 +395,13 @@ namespace LPS_Utility
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void mnuSettings_Click(object sender, EventArgs e)
+        {
+            frmSettings frmSettings = new frmSettings();
+            frmSettings.Show();
 
         }
     }

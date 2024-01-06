@@ -1,7 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LPS_Utility.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SilverWebsite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.kitco.com/price/precious-metals/silver</Value>
+    </Setting>
+    <Setting Name="SilverPriceNode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3</Value>
+    </Setting>
+    <Setting Name="GoldWebsite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.kitco.com/price/precious-metals/gold</Value>
+    </Setting>
+    <Setting Name="GoldPriceNode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

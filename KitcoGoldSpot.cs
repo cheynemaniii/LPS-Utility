@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
+using LPS_Utility.Properties;
 
 
 namespace LPS_Utility
@@ -16,14 +17,14 @@ namespace LPS_Utility
 
     public decimal SpotValue()
     {
-        var html1 = @"https://www.kitco.com/price/precious-metals/gold";
+        var html1 = Settings.Default.GoldWebsite.ToString();
 
         try
             {
             HtmlWeb web = new HtmlWeb();
             var htmlDoc1 = web.Load(html1);
 
-            var node1 = htmlDoc1.DocumentNode.SelectSingleNode("/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3");
+            var node1 = htmlDoc1.DocumentNode.SelectSingleNode(Settings.Default.GoldPriceNode.ToString());
             if (node1 != null)
                 {
 

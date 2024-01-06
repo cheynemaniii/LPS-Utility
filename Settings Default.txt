@@ -1,0 +1,11 @@
+Settings Defaults
+
+Gold Website:
+https://www.kitco.com/price/precious-metals/gold
+Gold Node:
+/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3
+
+Silver Website:
+https://www.kitco.com/price/precious-metals/silver
+SIlver Node:
+/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3
