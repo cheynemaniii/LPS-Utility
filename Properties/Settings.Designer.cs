@@ -12,7 +12,7 @@ namespace LPS_Utility.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/price/precious-metals/silver")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/")]
         public string SilverWebsite {
             get {
                 return ((string)(this["SilverWebsite"]));
@@ -37,7 +37,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("//*[@id=\"__next\"]/main/div/div[1]/div[3]/div/div[2]/div[1]/div/span[1]")]
         public string SilverPriceNode {
             get {
                 return ((string)(this["SilverPriceNode"]));
@@ -49,7 +49,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/price/precious-metals/gold")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/")]
         public string GoldWebsite {
             get {
                 return ((string)(this["GoldWebsite"]));
@@ -61,7 +61,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("/html/body/div[1]/div/main/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/h3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("//*[@id=\"__next\"]/main/div/div[1]/div[2]/div/div[2]/div[2]/div[1]/div/span[1]")]
         public string GoldPriceNode {
             get {
                 return ((string)(this["GoldPriceNode"]));
