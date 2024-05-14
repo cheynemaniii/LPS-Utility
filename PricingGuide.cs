@@ -170,12 +170,13 @@ namespace LPS_Utility
             decimal db8k = Math.Round((GoldSpotGram * (8 / 24m) * MarkupPercent), 2);
 
             // print header
-            e.Graphics.DrawString("Gold Pricing Guide", font, brush, 100, 20);
-            e.Graphics.DrawString("Mark Up Selected:" + Convert.ToString(MarkupPercent * 100) + "%", font, brush, 100, 40);
+            e.Graphics.DrawString("Gold Pricing Guide", font, brush, 100, 40);
             // print date
-            e.Graphics.DrawString("Date: " + Convert.ToString(longDate), font, brush, 100, 100);
+            e.Graphics.DrawString("Date: " + Convert.ToString(longDate), font, brush, 100, 60);
+            e.Graphics.DrawString("Mark Up Selected:" + Convert.ToString(MarkupPercent * 100) + "%", font, brush, 100, 80);
+         
             // print gold spot value
-            e.Graphics.DrawString("Gold Spot: $" + GlobalSpot.ToString(), font, brush, 100, 120);
+            e.Graphics.DrawString("Gold Spot: $" + GlobalSpot.ToString(), font, brush, 100, 100);
             // print 24k value
             e.Graphics.DrawString("24k: | $" + Convert.ToString(db24k), font, brush, 100, 140);
             // print 22k value
@@ -191,7 +192,7 @@ namespace LPS_Utility
             // print 8k value
             e.Graphics.DrawString(" 8k: | $" + Convert.ToString(db8k), font, brush, 100, 260);
             //draw a line
-            e.Graphics.DrawLine(new Pen(Color.Black), 100, 280, 300, 280);
+            e.Graphics.DrawLine(new Pen(Color.Black), 100, 300, 300, 300);
         
             // print markup value
             //e.Graphics.DrawString("Markup: " + Convert.ToString(MarkupPercent*100) + "%", font, brush, 100, 300);
