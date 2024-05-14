@@ -169,30 +169,34 @@ namespace LPS_Utility
             decimal db10k = Math.Round((GoldSpotGram * (10 / 24m) * MarkupPercent), 2);
             decimal db8k = Math.Round((GoldSpotGram * (8 / 24m) * MarkupPercent), 2);
 
-
-       
+            // print header
+            e.Graphics.DrawString("Gold Pricing Guide", font, brush, 100, 20);
+            e.Graphics.DrawString("Mark Up Selected:" + Convert.ToString(MarkupPercent * 100) + "%", font, brush, 100, 40);
             // print date
             e.Graphics.DrawString("Date: " + Convert.ToString(longDate), font, brush, 100, 100);
             // print gold spot value
             e.Graphics.DrawString("Gold Spot: $" + GlobalSpot.ToString(), font, brush, 100, 120);
             // print 24k value
-            e.Graphics.DrawString("24k: $" + Convert.ToString(db24k), font, brush, 100, 140);
+            e.Graphics.DrawString("24k: | $" + Convert.ToString(db24k), font, brush, 100, 140);
             // print 22k value
-            e.Graphics.DrawString("22k: $" + Convert.ToString(db22k), font, brush, 100, 160);
+            e.Graphics.DrawString("22k: | $" + Convert.ToString(db22k), font, brush, 100, 160);
             // print 18k value
-            e.Graphics.DrawString("18k: $" + Convert.ToString(db18k), font, brush, 100, 180);
+            e.Graphics.DrawString("18k: | $" + Convert.ToString(db18k), font, brush, 100, 180);
             // print 14k value
-            e.Graphics.DrawString("14k: $" + Convert.ToString(db14k), font, brush, 100, 200);
+            e.Graphics.DrawString("14k: | $" + Convert.ToString(db14k), font, brush, 100, 200);
             // print 12k value
-            e.Graphics.DrawString("12k: $" + Convert.ToString(db12k), font, brush, 100, 220);
+            e.Graphics.DrawString("12k: | $" + Convert.ToString(db12k), font, brush, 100, 220);
             // print 10k value
-            e.Graphics.DrawString("10k: $" + Convert.ToString(db10k), font, brush, 100, 240);
+            e.Graphics.DrawString("10k: | $" + Convert.ToString(db10k), font, brush, 100, 240);
             // print 8k value
-            e.Graphics.DrawString("8k: $" + Convert.ToString(db8k), font, brush, 100, 260);
+            e.Graphics.DrawString(" 8k: | $" + Convert.ToString(db8k), font, brush, 100, 260);
+            //draw a line
+            e.Graphics.DrawLine(new Pen(Color.Black), 100, 280, 300, 280);
+        
             // print markup value
-            e.Graphics.DrawString("Markup: " + Convert.ToString(MarkupPercent) + "%", font, brush, 100, 280);
+            //e.Graphics.DrawString("Markup: " + Convert.ToString(MarkupPercent*100) + "%", font, brush, 100, 300);
             // print footer
-            e.Graphics.DrawString("Printed by LPS Utility", font, brush, 100, 300);
+            e.Graphics.DrawString("Printed by LPS Utility", font, brush, 100, 320);
            
 
 
