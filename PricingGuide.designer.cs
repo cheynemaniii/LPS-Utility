@@ -51,12 +51,14 @@ namespace LPS_Utility
             this.lbl12k = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lbl10k = new System.Windows.Forms.Label();
+            this.cboPrinters = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtGoldSpot
             // 
-            this.txtGoldSpot.Location = new System.Drawing.Point(32, 34);
+            this.txtGoldSpot.Location = new System.Drawing.Point(66, 45);
             this.txtGoldSpot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGoldSpot.Name = "txtGoldSpot";
             this.txtGoldSpot.Size = new System.Drawing.Size(149, 22);
@@ -67,7 +69,7 @@ namespace LPS_Utility
             // 
             this.lblGoldSpot.AutoSize = true;
             this.lblGoldSpot.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblGoldSpot.Location = new System.Drawing.Point(32, 10);
+            this.lblGoldSpot.Location = new System.Drawing.Point(59, 10);
             this.lblGoldSpot.Name = "lblGoldSpot";
             this.lblGoldSpot.Size = new System.Drawing.Size(163, 28);
             this.lblGoldSpot.TabIndex = 2;
@@ -84,7 +86,7 @@ namespace LPS_Utility
             "600%",
             "700%",
             "800%"});
-            this.cboMarkup.Location = new System.Drawing.Point(32, 85);
+            this.cboMarkup.Location = new System.Drawing.Point(66, 109);
             this.cboMarkup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMarkup.Name = "cboMarkup";
             this.cboMarkup.Size = new System.Drawing.Size(149, 24);
@@ -94,7 +96,7 @@ namespace LPS_Utility
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(55, 61);
+            this.label1.Location = new System.Drawing.Point(84, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 28);
             this.label1.TabIndex = 6;
@@ -102,10 +104,11 @@ namespace LPS_Utility
             // 
             // cmdCalculate
             // 
-            this.cmdCalculate.Location = new System.Drawing.Point(14, 419);
+            this.cmdCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCalculate.Location = new System.Drawing.Point(71, 549);
             this.cmdCalculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdCalculate.Name = "cmdCalculate";
-            this.cmdCalculate.Size = new System.Drawing.Size(85, 31);
+            this.cmdCalculate.Size = new System.Drawing.Size(126, 60);
             this.cmdCalculate.TabIndex = 7;
             this.cmdCalculate.Text = "&Calculate";
             this.cmdCalculate.UseVisualStyleBackColor = true;
@@ -113,13 +116,14 @@ namespace LPS_Utility
             // 
             // cmdPrint
             // 
-            this.cmdPrint.Location = new System.Drawing.Point(115, 419);
+            this.cmdPrint.Location = new System.Drawing.Point(174, 502);
             this.cmdPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdPrint.Name = "cmdPrint";
             this.cmdPrint.Size = new System.Drawing.Size(85, 31);
             this.cmdPrint.TabIndex = 8;
             this.cmdPrint.Text = "&Print";
             this.cmdPrint.UseVisualStyleBackColor = true;
+            this.cmdPrint.Click += new System.EventHandler(this.cmdPrint_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -140,7 +144,7 @@ namespace LPS_Utility
             this.tableLayoutPanel1.Controls.Add(this.lbl12k, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.lbl10k, 1, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 115);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(47, 140);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
@@ -301,11 +305,32 @@ namespace LPS_Utility
             this.lbl10k.TabIndex = 14;
             this.lbl10k.Text = "label13";
             // 
+            // cboPrinters
+            // 
+            this.cboPrinters.FormattingEnabled = true;
+            this.cboPrinters.Location = new System.Drawing.Point(22, 473);
+            this.cboPrinters.Name = "cboPrinters";
+            this.cboPrinters.Size = new System.Drawing.Size(237, 24);
+            this.cboPrinters.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(87, 446);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Select Printer:";
+            // 
             // PricingGuide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(233, 463);
+            this.ClientSize = new System.Drawing.Size(285, 630);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboPrinters);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.cmdPrint);
             this.Controls.Add(this.cmdCalculate);
@@ -361,5 +386,7 @@ namespace LPS_Utility
         private System.Windows.Forms.Label lbl12k;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lbl10k;
+        private System.Windows.Forms.ComboBox cboPrinters;
+        private System.Windows.Forms.Label label2;
     }
 }

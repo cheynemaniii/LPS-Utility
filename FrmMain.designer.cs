@@ -115,17 +115,17 @@ namespace LPS_Utility
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(13, 55);
+            this.label2.Location = new System.Drawing.Point(14, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 20);
+            this.label2.Size = new System.Drawing.Size(171, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Amount fo Diamonds:";
+            this.label2.Text = "Amount for Diamonds:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(52, 21);
+            this.label1.Location = new System.Drawing.Point(62, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 20);
             this.label1.TabIndex = 0;
@@ -201,6 +201,7 @@ namespace LPS_Utility
             this.cboPercentage.Size = new System.Drawing.Size(222, 24);
             this.cboPercentage.TabIndex = 7;
             this.cboPercentage.Visible = false;
+            this.cboPercentage.SelectedIndexChanged += new System.EventHandler(this.cboPercentage_SelectedIndexChanged);
             // 
             // gboxResults
             // 
@@ -393,11 +394,11 @@ namespace LPS_Utility
             // 
             this.lblPercent.AutoSize = true;
             this.lblPercent.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblPercent.Location = new System.Drawing.Point(120, 258);
+            this.lblPercent.Location = new System.Drawing.Point(91, 259);
             this.lblPercent.Name = "lblPercent";
-            this.lblPercent.Size = new System.Drawing.Size(214, 20);
+            this.lblPercent.Size = new System.Drawing.Size(272, 20);
             this.lblPercent.TabIndex = 16;
-            this.lblPercent.Text = "Please Select The Precentage:";
+            this.lblPercent.Text = "Please Select The Markup Precentage:";
             this.lblPercent.Visible = false;
             // 
             // txtSilverSpot

@@ -404,5 +404,10 @@ namespace LPS_Utility
             frmSettings.Show();
 
         }
+
+        private void cboPercentage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

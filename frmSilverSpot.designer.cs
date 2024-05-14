@@ -767,7 +767,7 @@ namespace LPS_Utility
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 360);
+            this.ClientSize = new System.Drawing.Size(810, 592);
             this.Controls.Add(this.cmdSilverCalculate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
