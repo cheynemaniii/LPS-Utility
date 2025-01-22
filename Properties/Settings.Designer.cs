@@ -25,7 +25,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/charts/gold")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/charts/silver")]
         public string SilverWebsite {
             get {
                 return ((string)(this["SilverWebsite"]));
@@ -49,7 +49,7 @@ namespace LPS_Utility.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/charts/silver")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.kitco.com/charts/gold")]
         public string GoldWebsite {
             get {
                 return ((string)(this["GoldWebsite"]));

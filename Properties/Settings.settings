@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="SilverWebsite" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://www.kitco.com/charts/gold</Value>
+      <Value Profile="(Default)">https://www.kitco.com/charts/silver</Value>
     </Setting>
     <Setting Name="SilverPriceNode" Type="System.String" Scope="User">
       <Value Profile="(Default)">//*[@id="__next"]/div/main/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/h3</Value>
     </Setting>
     <Setting Name="GoldWebsite" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://www.kitco.com/charts/silver</Value>
+      <Value Profile="(Default)">https://www.kitco.com/charts/gold</Value>
     </Setting>
     <Setting Name="GoldPriceNode" Type="System.String" Scope="User">
       <Value Profile="(Default)">//*[@id="__next"]/div/main/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/h3</Value>
