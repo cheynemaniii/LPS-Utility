@@ -50,6 +50,8 @@ namespace LPS_Utility
             lbl999Gram.Text = "$" + Math.Round(SilverSpotGram * .999m, 2).ToString();
 
             //Display Sale Price Per Pure Ounce @ Certain Percentages
+            lblSaleOunce10.Text = "$" + Math.Round(SilverSpot * 1.1m, 2).ToString();
+            lblSaleOunce15.Text = "$" + Math.Round(SilverSpot * 1.15m, 2).ToString();
             lblSaleOunce20.Text = "$" + Math.Round(SilverSpot * 1.2m, 2).ToString();
             lblSaleOunce25.Text = "$" + Math.Round(SilverSpot * 1.25m, 2).ToString();
             lblSaleOunce30.Text = "$" + Math.Round(SilverSpot * 1.3m, 2).ToString();
@@ -59,6 +61,8 @@ namespace LPS_Utility
             lblSaleOunce200.Text = "$" + Math.Round(SilverSpot * 3m, 2).ToString();
 
             //Display Sale Price Per Pure Gram @ Certain Percentages
+            lblSaleGram10.Text = "$" + Math.Round(SilverSpotGram * 1.1m, 2).ToString();
+            lblSaleGram15.Text = "$" + Math.Round(SilverSpotGram * 1.15m, 2).ToString();    
             lblSaleGram20.Text = "$" + Math.Round(SilverSpotGram * 1.2m, 2).ToString();
             lblSaleGram25.Text = "$" + Math.Round(SilverSpotGram * 1.25m, 2).ToString();
             lblSaleGram30.Text = "$" + Math.Round(SilverSpotGram * 1.3m, 2).ToString();
@@ -103,6 +107,16 @@ namespace LPS_Utility
         }
 
         private void frmSilverSpot_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

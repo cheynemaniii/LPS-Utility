@@ -68,7 +68,6 @@ namespace LPS_Utility
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.lblSaleOunce20 = new System.Windows.Forms.Label();
             this.lblSaleOunce25 = new System.Windows.Forms.Label();
             this.lblSaleOunce30 = new System.Windows.Forms.Label();
             this.lblSaleOunce40 = new System.Windows.Forms.Label();
@@ -86,6 +85,13 @@ namespace LPS_Utility
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.cmdSilverCalculate = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lblSaleOunce10 = new System.Windows.Forms.Label();
+            this.lblSaleOunce20 = new System.Windows.Forms.Label();
+            this.lblSaleOunce15 = new System.Windows.Forms.Label();
+            this.lblSaleGram15 = new System.Windows.Forms.Label();
+            this.lblSaleGram10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.Spot_Table.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -120,7 +126,7 @@ namespace LPS_Utility
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(365, 253);
+            this.groupBox1.Size = new System.Drawing.Size(365, 284);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Spot Price Breakdown:";
@@ -422,44 +428,54 @@ namespace LPS_Utility
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(365, 253);
+            this.groupBox2.Size = new System.Drawing.Size(365, 284);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sale Price Breakdown:";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label14, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label15, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram10, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram15, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce10, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label23, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label22, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label14, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.label15, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.label18, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.label19, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label20, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label21, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce20, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce25, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce30, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce40, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce50, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce100, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce200, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram20, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram25, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram30, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram40, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram50, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram100, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram200, 2, 7);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(20, 28);
+            this.tableLayoutPanel2.Controls.Add(this.label21, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce25, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce30, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce40, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce50, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce100, 1, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce200, 1, 9);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram20, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram25, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram30, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram40, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram50, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram100, 2, 8);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleGram200, 2, 9);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce20, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lblSaleOunce15, 1, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 33);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 8;
+            this.tableLayoutPanel2.RowCount = 10;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
@@ -467,15 +483,15 @@ namespace LPS_Utility
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 197);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 236);
             this.tableLayoutPanel2.TabIndex = 1;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 50);
+            this.label11.Location = new System.Drawing.Point(31, 90);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 20);
             this.label11.TabIndex = 2;
@@ -485,7 +501,7 @@ namespace LPS_Utility
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(30, 74);
+            this.label14.Location = new System.Drawing.Point(31, 114);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 20);
             this.label14.TabIndex = 3;
@@ -495,7 +511,7 @@ namespace LPS_Utility
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(30, 98);
+            this.label15.Location = new System.Drawing.Point(31, 138);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(40, 20);
             this.label15.TabIndex = 4;
@@ -505,7 +521,7 @@ namespace LPS_Utility
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(30, 122);
+            this.label16.Location = new System.Drawing.Point(31, 162);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 20);
             this.label16.TabIndex = 5;
@@ -515,7 +531,7 @@ namespace LPS_Utility
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 146);
+            this.label17.Location = new System.Drawing.Point(22, 186);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 20);
             this.label17.TabIndex = 6;
@@ -525,7 +541,7 @@ namespace LPS_Utility
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(21, 172);
+            this.label18.Location = new System.Drawing.Point(22, 212);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(49, 20);
             this.label18.TabIndex = 7;
@@ -555,30 +571,19 @@ namespace LPS_Utility
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(30, 26);
+            this.label21.Location = new System.Drawing.Point(31, 66);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 20);
             this.label21.TabIndex = 8;
             this.label21.Text = "20%";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSaleOunce20
-            // 
-            this.lblSaleOunce20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblSaleOunce20.AutoSize = true;
-            this.lblSaleOunce20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce20.Location = new System.Drawing.Point(80, 26);
-            this.lblSaleOunce20.Name = "lblSaleOunce20";
-            this.lblSaleOunce20.Size = new System.Drawing.Size(114, 20);
-            this.lblSaleOunce20.TabIndex = 9;
-            this.lblSaleOunce20.Text = "lblSaleOunce20";
-            // 
             // lblSaleOunce25
             // 
             this.lblSaleOunce25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce25.AutoSize = true;
             this.lblSaleOunce25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce25.Location = new System.Drawing.Point(108, 50);
+            this.lblSaleOunce25.Location = new System.Drawing.Point(109, 90);
             this.lblSaleOunce25.Name = "lblSaleOunce25";
             this.lblSaleOunce25.Size = new System.Drawing.Size(57, 20);
             this.lblSaleOunce25.TabIndex = 10;
@@ -589,7 +594,7 @@ namespace LPS_Utility
             this.lblSaleOunce30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce30.AutoSize = true;
             this.lblSaleOunce30.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce30.Location = new System.Drawing.Point(109, 74);
+            this.lblSaleOunce30.Location = new System.Drawing.Point(109, 114);
             this.lblSaleOunce30.Name = "lblSaleOunce30";
             this.lblSaleOunce30.Size = new System.Drawing.Size(56, 20);
             this.lblSaleOunce30.TabIndex = 11;
@@ -600,7 +605,7 @@ namespace LPS_Utility
             this.lblSaleOunce40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce40.AutoSize = true;
             this.lblSaleOunce40.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce40.Location = new System.Drawing.Point(109, 98);
+            this.lblSaleOunce40.Location = new System.Drawing.Point(109, 138);
             this.lblSaleOunce40.Name = "lblSaleOunce40";
             this.lblSaleOunce40.Size = new System.Drawing.Size(56, 20);
             this.lblSaleOunce40.TabIndex = 12;
@@ -611,7 +616,7 @@ namespace LPS_Utility
             this.lblSaleOunce50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce50.AutoSize = true;
             this.lblSaleOunce50.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce50.Location = new System.Drawing.Point(109, 122);
+            this.lblSaleOunce50.Location = new System.Drawing.Point(109, 162);
             this.lblSaleOunce50.Name = "lblSaleOunce50";
             this.lblSaleOunce50.Size = new System.Drawing.Size(56, 20);
             this.lblSaleOunce50.TabIndex = 13;
@@ -622,7 +627,7 @@ namespace LPS_Utility
             this.lblSaleOunce100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce100.AutoSize = true;
             this.lblSaleOunce100.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce100.Location = new System.Drawing.Point(109, 146);
+            this.lblSaleOunce100.Location = new System.Drawing.Point(109, 186);
             this.lblSaleOunce100.Name = "lblSaleOunce100";
             this.lblSaleOunce100.Size = new System.Drawing.Size(56, 20);
             this.lblSaleOunce100.TabIndex = 14;
@@ -633,7 +638,7 @@ namespace LPS_Utility
             this.lblSaleOunce200.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleOunce200.AutoSize = true;
             this.lblSaleOunce200.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleOunce200.Location = new System.Drawing.Point(109, 172);
+            this.lblSaleOunce200.Location = new System.Drawing.Point(109, 212);
             this.lblSaleOunce200.Name = "lblSaleOunce200";
             this.lblSaleOunce200.Size = new System.Drawing.Size(56, 20);
             this.lblSaleOunce200.TabIndex = 15;
@@ -644,7 +649,7 @@ namespace LPS_Utility
             this.lblSaleGram20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram20.AutoSize = true;
             this.lblSaleGram20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram20.Location = new System.Drawing.Point(209, 26);
+            this.lblSaleGram20.Location = new System.Drawing.Point(209, 66);
             this.lblSaleGram20.Name = "lblSaleGram20";
             this.lblSaleGram20.Size = new System.Drawing.Size(107, 20);
             this.lblSaleGram20.TabIndex = 16;
@@ -655,7 +660,7 @@ namespace LPS_Utility
             this.lblSaleGram25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram25.AutoSize = true;
             this.lblSaleGram25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram25.Location = new System.Drawing.Point(235, 50);
+            this.lblSaleGram25.Location = new System.Drawing.Point(235, 90);
             this.lblSaleGram25.Name = "lblSaleGram25";
             this.lblSaleGram25.Size = new System.Drawing.Size(56, 20);
             this.lblSaleGram25.TabIndex = 17;
@@ -666,7 +671,7 @@ namespace LPS_Utility
             this.lblSaleGram30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram30.AutoSize = true;
             this.lblSaleGram30.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram30.Location = new System.Drawing.Point(234, 74);
+            this.lblSaleGram30.Location = new System.Drawing.Point(234, 114);
             this.lblSaleGram30.Name = "lblSaleGram30";
             this.lblSaleGram30.Size = new System.Drawing.Size(58, 20);
             this.lblSaleGram30.TabIndex = 18;
@@ -677,7 +682,7 @@ namespace LPS_Utility
             this.lblSaleGram40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram40.AutoSize = true;
             this.lblSaleGram40.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram40.Location = new System.Drawing.Point(234, 98);
+            this.lblSaleGram40.Location = new System.Drawing.Point(234, 138);
             this.lblSaleGram40.Name = "lblSaleGram40";
             this.lblSaleGram40.Size = new System.Drawing.Size(58, 20);
             this.lblSaleGram40.TabIndex = 19;
@@ -688,7 +693,7 @@ namespace LPS_Utility
             this.lblSaleGram50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram50.AutoSize = true;
             this.lblSaleGram50.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram50.Location = new System.Drawing.Point(233, 122);
+            this.lblSaleGram50.Location = new System.Drawing.Point(233, 162);
             this.lblSaleGram50.Name = "lblSaleGram50";
             this.lblSaleGram50.Size = new System.Drawing.Size(59, 20);
             this.lblSaleGram50.TabIndex = 20;
@@ -699,7 +704,7 @@ namespace LPS_Utility
             this.lblSaleGram100.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram100.AutoSize = true;
             this.lblSaleGram100.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram100.Location = new System.Drawing.Point(234, 146);
+            this.lblSaleGram100.Location = new System.Drawing.Point(234, 186);
             this.lblSaleGram100.Name = "lblSaleGram100";
             this.lblSaleGram100.Size = new System.Drawing.Size(58, 20);
             this.lblSaleGram100.TabIndex = 21;
@@ -710,7 +715,7 @@ namespace LPS_Utility
             this.lblSaleGram200.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSaleGram200.AutoSize = true;
             this.lblSaleGram200.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lblSaleGram200.Location = new System.Drawing.Point(234, 172);
+            this.lblSaleGram200.Location = new System.Drawing.Point(234, 212);
             this.lblSaleGram200.Name = "lblSaleGram200";
             this.lblSaleGram200.Size = new System.Drawing.Size(58, 20);
             this.lblSaleGram200.TabIndex = 22;
@@ -762,6 +767,85 @@ namespace LPS_Utility
             this.cmdSilverCalculate.Text = "&Calculate";
             this.cmdSilverCalculate.UseVisualStyleBackColor = true;
             this.cmdSilverCalculate.Click += new System.EventHandler(this.cmdSilverCalculate_Click);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(31, 24);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(40, 20);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "10%";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(31, 44);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 20);
+            this.label23.TabIndex = 24;
+            this.label23.Text = "15%";
+            // 
+            // lblSaleOunce10
+            // 
+            this.lblSaleOunce10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSaleOunce10.AutoSize = true;
+            this.lblSaleOunce10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblSaleOunce10.Location = new System.Drawing.Point(109, 24);
+            this.lblSaleOunce10.Name = "lblSaleOunce10";
+            this.lblSaleOunce10.Size = new System.Drawing.Size(57, 20);
+            this.lblSaleOunce10.TabIndex = 24;
+            this.lblSaleOunce10.Text = "label14";
+            this.lblSaleOunce10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSaleOunce20
+            // 
+            this.lblSaleOunce20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSaleOunce20.AutoSize = true;
+            this.lblSaleOunce20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lblSaleOunce20.Location = new System.Drawing.Point(109, 66);
+            this.lblSaleOunce20.Name = "lblSaleOunce20";
+            this.lblSaleOunce20.Size = new System.Drawing.Size(57, 20);
+            this.lblSaleOunce20.TabIndex = 25;
+            this.lblSaleOunce20.Text = "label14";
+            // 
+            // lblSaleOunce15
+            // 
+            this.lblSaleOunce15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSaleOunce15.AutoSize = true;
+            this.lblSaleOunce15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaleOunce15.Location = new System.Drawing.Point(108, 44);
+            this.lblSaleOunce15.Name = "lblSaleOunce15";
+            this.lblSaleOunce15.Size = new System.Drawing.Size(58, 20);
+            this.lblSaleOunce15.TabIndex = 26;
+            this.lblSaleOunce15.Text = "label26";
+            this.lblSaleOunce15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSaleGram15
+            // 
+            this.lblSaleGram15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSaleGram15.AutoSize = true;
+            this.lblSaleGram15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaleGram15.Location = new System.Drawing.Point(234, 44);
+            this.lblSaleGram15.Name = "lblSaleGram15";
+            this.lblSaleGram15.Size = new System.Drawing.Size(58, 20);
+            this.lblSaleGram15.TabIndex = 27;
+            this.lblSaleGram15.Text = "label27";
+            this.lblSaleGram15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSaleGram10
+            // 
+            this.lblSaleGram10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSaleGram10.AutoSize = true;
+            this.lblSaleGram10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaleGram10.Location = new System.Drawing.Point(234, 24);
+            this.lblSaleGram10.Name = "lblSaleGram10";
+            this.lblSaleGram10.Size = new System.Drawing.Size(58, 20);
+            this.lblSaleGram10.TabIndex = 28;
+            this.lblSaleGram10.Text = "label28";
+            this.lblSaleGram10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmSilverSpot
             // 
@@ -834,7 +918,6 @@ namespace LPS_Utility
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label lblSaleOunce20;
         private System.Windows.Forms.Label lblSaleOunce25;
         private System.Windows.Forms.Label lblSaleOunce30;
         private System.Windows.Forms.Label lblSaleOunce40;
@@ -849,5 +932,12 @@ namespace LPS_Utility
         private System.Windows.Forms.Label lblSaleGram100;
         private System.Windows.Forms.Label lblSaleGram200;
         private System.Windows.Forms.Button cmdSilverCalculate;
+        private System.Windows.Forms.Label lblSaleOunce20;
+        private System.Windows.Forms.Label lblSaleOunce10;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lblSaleGram10;
+        private System.Windows.Forms.Label lblSaleGram15;
+        private System.Windows.Forms.Label lblSaleOunce15;
     }
 }

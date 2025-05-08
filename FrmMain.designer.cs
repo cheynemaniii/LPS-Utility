@@ -184,7 +184,9 @@ namespace LPS_Utility
             this.cboPercentage.FormattingEnabled = true;
             this.cboPercentage.Items.AddRange(new object[] {
             "10%",
+            "15%",
             "20%",
+            "25%",
             "30%",
             "40%",
             "50%",

@@ -207,17 +207,21 @@ namespace LPS_Utility
                 switch (cboPercentage.SelectedIndex)
                 {
                     case 0: percentage = 1.10m; break;
-                    case 1: percentage = 1.20m; break;
-                    case 2: percentage = 1.30m; break;
-                    case 3: percentage = 1.40m; break;
-                    case 4: percentage = 1.50m; break;
-                    case 5: percentage = 1.60m; break;
-                    case 6: percentage = 1.70m; break;
-                    case 7: percentage = 1.80m; break;
-                    case 8: percentage = 1.90m; break;
-                    case 9: percentage = 2m; break;
-                    case 10: percentage = 2.5m; break;
-                    case 11: percentage = 3m; break;
+                    case 1: percentage = 1.15m; break;
+                    case 2: percentage = 1.20m; break;
+                    case 3: percentage = 1.25m; break;
+                    case 4: percentage = 1.30m; break;
+                    case 5: percentage = 1.20m; break;
+                    case 6: percentage = 1.30m; break;
+                    case 7: percentage = 1.40m; break;
+                    case 8: percentage = 1.50m; break;
+                    case 9: percentage = 1.60m; break;
+                    case 10: percentage = 1.70m; break;
+                    case 11: percentage = 1.80m; break;
+                    case 12: percentage = 1.90m; break;
+                    case 13: percentage = 2m; break;
+                    case 14: percentage = 2.5m; break;
+                    case 15: percentage = 3m; break;
                     default: percentage = 0m; break;
                 }
                 return percentage;
